@@ -11,7 +11,7 @@ dotenv.config(); // utilización de variables de entorno
 const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const BASE_URL = configServer(); //configuracion del servidor - producción / desarrollo
 
 connectedDB(); // conectar a la base de datos
