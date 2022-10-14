@@ -1,6 +1,5 @@
 import { Router } from "express";
-import ChatController from "../controllers/ChatController.js";
-import { validateJwt } from "../middlewares/validate-jwt.js";
+import ChatController from "../controllers/chatController.js";
 
 const router = Router();
 

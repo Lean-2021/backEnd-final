@@ -1,5 +1,5 @@
-import CartDao from "../persistence/daos/Cart.js";
-import ProductService from "./ProductService.js";
+import CartDao from "../persistence/daos/cart.js";
+import ProductService from "./productService.js";
 
 export default class CartService {
   constructor() {

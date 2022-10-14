@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import MessageController from "../controllers/MessageController.js";
+import MessageController from "../controllers/messageController.js";
 import { validateEmail, validateTypeUser } from "../helpers/validateMessage.js";
 import { validateJwt } from "../middlewares/validate-jwt.js";
 import { validateFields } from "../middlewares/validateFields.js";

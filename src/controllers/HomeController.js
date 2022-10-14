@@ -1,5 +1,3 @@
-import ejs from 'ejs';
-
 export default class HomeController {
   constructor() {}
 

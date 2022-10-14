@@ -24,7 +24,7 @@ export default class UserController {
         password
       );
       const { token } = userAuthenticated;
-      res.cookie("token", token, { maxAge: 60 * 60 * 60 * 600, path: "/" });//duracion de las cookies - 10 horas
+      res.cookie("token", token, { maxAge: 60 * 60 * 60 * 600, path: "/" }); //duracion de las cookies - 10 horas
       res.cookie("email", email, { maxAge: 60 * 60 * 60 * 600, path: "/" });
       res.status(201).json(userAuthenticated);
     } catch (error) {

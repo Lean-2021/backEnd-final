@@ -1,4 +1,4 @@
-import MessageDao from "../persistence/daos/Message.js";
+import MessageDao from "../persistence/daos/message.js";
 
 export default class MessageService {
   constructor() {

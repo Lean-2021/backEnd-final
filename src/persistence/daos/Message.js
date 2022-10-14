@@ -1,5 +1,5 @@
 import Messages from "../models/Messages.js";
-import { messageDto } from "../dtos/MessageDto.js";
+import { messageDto } from "../dtos/messageDto.js";
 
 export default class MessageDao {
   constructor() {

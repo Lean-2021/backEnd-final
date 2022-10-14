@@ -1,4 +1,4 @@
-import OrderService from "../services/OrderService.js";
+import OrderService from "../services/orderService.js";
 
 export default class OrderController {
   constructor() {

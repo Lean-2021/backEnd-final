@@ -1,7 +1,7 @@
-import OrderDaos from "../persistence/daos/Order.js";
+import OrderDaos from "../persistence/daos/order.js";
 import { sendMailOrderAdmin } from "../utils/sendMailOrderAdmin.js";
 import { sendMailOrderUser } from "../utils/sendMailOrderUser.js";
-import CartService from "./CartService.js";
+import CartService from "./cartService.js";
 
 export default class OrderService {
   constructor() {

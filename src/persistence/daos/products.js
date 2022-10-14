@@ -1,4 +1,4 @@
-import { productDto } from "../dtos/ProductDto.js";
+import { productDto } from "../dtos/productDto.js";
 import Product from "../models/Product.js";
 
 export default class ProductDao {

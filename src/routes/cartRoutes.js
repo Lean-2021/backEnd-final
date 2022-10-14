@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import CartController from "../controllers/CartController.js";
+import CartController from "../controllers/cartController.js";
 import { existCart, validateEmail } from "../helpers/validateCart.js";
 import { validateJwt } from "../middlewares/validate-jwt.js";
 import { validateFields } from "../middlewares/validateFields.js";

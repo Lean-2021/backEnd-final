@@ -1,5 +1,5 @@
 import Order from "../models/Order.js";
-import { orderDto } from "../dtos/OrderDto.js";
+import { orderDto } from "../dtos/orderDto.js";
 
 export default class OrderDaos {
   constructor() {
