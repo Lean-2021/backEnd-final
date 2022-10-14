@@ -19,7 +19,7 @@ sockets(io);
 
 // conexión vistas EJS
 app.set("views", "./src/views");
-app.set("view engines", "ejs");
+app.set("view engine", "ejs");
 
 //middlewares
 app.use(express.json());
