@@ -5,7 +5,7 @@ const passwordUser = document.getElementById("password");
 
 //url de la api
 // let baseUrl='http://localhost:8080';
-let baseUrl='https://proyectoback-2022.herokuapp.com';
+let baseUrl='https://proyectoback-2022.herokuapp.com/';
 
 formLogin.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -15,7 +15,7 @@ formLogin.addEventListener("submit", async (e) => {
       email: emailUser.value.toLowerCase(),
       password: passwordUser.value,
     };
-    await axios.post(`${baseUrl}/auth/login`, user);
+    await axios.post(`${baseUrl}auth/login`, user);
     window.location.href = "/mensajes";
   } catch (error) {
     alert("Email y/o password incorrectos");

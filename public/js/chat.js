@@ -14,7 +14,7 @@ const getToken = getCookie("token");
 let messages;
 //mostrar mensajes anteriores si existen o si no hay mostra mensaje = ningun mensaje
 const chatMessages = async () => {
-  let res = await axios.get(`${baseUrl}/chat`, {
+  let res = await axios.get(`${baseUrl}chat`, {
     headers: {
       "authorization-token": getToken,
     },
@@ -57,7 +57,7 @@ formMessages.addEventListener("submit", async (e) => {
   // enviar un nuevo mensaje
   socket.emit("addMessage", newMessage);
   // guardar en la base de datos el mensaje
-  await axios.post(`${baseUrl}/chat`, newMessage, {
+  await axios.post(`${baseUrl}chat`, newMessage, {
     headers: {
       "authorization-token": getToken,
     },
