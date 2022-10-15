@@ -1,11 +1,11 @@
 import { Router } from "express";
-import ProductRoute from "./productRoutes.js";
-import UserRoute from "./userRoutes.js";
 import CartRoute from "./cartRoutes.js";
-import MessageRoute from "./messageRoutes.js";
 import HomeRouter from "./homeRoute.js";
-import ChatRoute from './chatRoute.js';
-import OrderRoute from "./orderRoutes.js";
+import ChatRoute from "./chatRoute.js";
+import MessageRoute from "./messageRoute.js";
+import OrderRoute from "./orderRoute.js";
+import ProductRoute from "./productRoute.js";
+import UserRoute from "./userRoute.js";
 
 const router = Router();
 
@@ -24,5 +24,5 @@ router.use("/productos", productRoute.init()); // ruta de productos
 router.use("/carrito", cartRoute.init()); // ruta carrito de compras
 router.use("/ordenes", orderRoute.init()); // ruta ordenes de compra
 router.use("/chat", messageRoute.init()); // ruta mensajes del chat
-router.use('/mensajes',chatRoute.init()); // ruta para la vista de los mensajes utilizando websockets 
+router.use("/mensajes", chatRoute.init()); // ruta para la vista de los mensajes utilizando websockets
 export default router;

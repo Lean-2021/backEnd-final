@@ -4,7 +4,7 @@ import MessageController from "../controllers/messageController.js";
 import { validateEmail, validateTypeUser } from "../helpers/validateMessage.js";
 import { validateJwt } from "../middlewares/validate-jwt.js";
 import { validateFields } from "../middlewares/validateFields.js";
-
+ 
 const router = Router();
 
 export default class MessageRoute {
