@@ -1,7 +1,7 @@
 import { Router } from "express";
-import CartRoute from "./cartRoutes.js";
-import HomeRouter from "./homeRoute.js";
+import CartRoute from "./cartRoute.js";
 import ChatRoute from "./chatRoute.js";
+import HomeRoute from "./homeRoute.js";
 import MessageRoute from "./messageRoute.js";
 import OrderRoute from "./orderRoute.js";
 import ProductRoute from "./productRoute.js";
@@ -14,11 +14,11 @@ const productRoute = new ProductRoute();
 const cartRoute = new CartRoute();
 const orderRoute = new OrderRoute();
 const messageRoute = new MessageRoute();
-const homeRouter = new HomeRouter();
+const homeRoute = new HomeRoute();
 const chatRoute = new ChatRoute();
 
 //Acceso a las rutas
-router.use("/", homeRouter.init()); // ruta vista Home
+router.use("/", homeRoute.init()); // ruta vista Home
 router.use("/auth", userRoute.init()); // ruta para el registro y autenticación de usuarios
 router.use("/productos", productRoute.init()); // ruta de productos
 router.use("/carrito", cartRoute.init()); // ruta carrito de compras
