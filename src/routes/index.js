@@ -1,7 +1,7 @@
 import { Router } from "express";
 import CartRoute from "./cartRoute.js";
 import ChatRoute from "./chatRoute.js";
-import HomeRoute from "./home.Routes.js";
+import HomeRoute from "./homeRoutes.js";
 import MessageRoute from "./messageRoute.js";
 import OrderRoute from "./orderRoute.js";
 import ProductRoute from "./productRoute.js";
