@@ -18,7 +18,7 @@ const homeRoute = new HomeRoute();
 const chatRoute = new ChatRoute();
 
 //Acceso a las rutas
-router.use("/", homeRoute.init()); // ruta vista Home
+router.use("/", homeRoute.init()); // ruta vista login
 router.use("/auth", userRoute.init()); // ruta para el registro y autenticación de usuarios
 router.use("/productos", productRoute.init()); // ruta de productos
 router.use("/carrito", cartRoute.init()); // ruta carrito de compras
