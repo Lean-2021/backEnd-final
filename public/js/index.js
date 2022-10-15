@@ -4,8 +4,8 @@ const emailUser = document.getElementById("email");
 const passwordUser = document.getElementById("password");
 
 //url de la api
-// let baseUrl='http://localhost:8080';
-let baseUrl='https://proyectoback-2022.herokuapp.com/';
+let baseUrl='http://localhost:8080';
+// let baseUrl='https://proyectoback-2022.herokuapp.com/';
 
 formLogin.addEventListener("submit", async (e) => {
   e.preventDefault();
